@@ -1,0 +1,37 @@
+.vssue-header-powered-by{
+  display: none
+}
+
+.bilibili{
+  width : 100%;
+  height : 500px;
+}
+.music163{
+  width : 100%;
+}
+.home img{
+  pointer-events: none;
+}
+header img{
+  pointer-events: none;
+}
+@media screen and (min-width: 1200px) {
+  .sidebar-group-items>li>.sidebar-sub-headers{
+    position: fixed;
+    right: 0%;
+    top : 80px;
+    height : 80%;
+    overflow-y : hidden;
+    width: 15%;
+    font-size :12px;
+  }
+  .sidebar-group-items>li>.active:before{
+    content:"🎈 ";
+  }
+  .sidebar-sub-headers>.sidebar-sub-header>.active:before{
+    content:"🎉 ";
+  }
+  .page{
+    width : 60%;
+  }
+}

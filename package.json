@@ -1,0 +1,24 @@
+{
+  "name": "tech-arch-doc",
+  "version": "2.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vuepress dev",
+    "build": "vuepress build"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^1.0.3",
+    "@vuepress/plugin-medium-zoom": "^1.0.4",
+    "@vuepress/plugin-search": "^1.9.5",
+    "vuepress": "^1.0.2"
+  },
+  "dependencies": {
+    "@vssue/api-gitee-v5": "^1.4.7",
+    "@vssue/api-github-v3": "^1.1.2",
+    "@vssue/vuepress-plugin-vssue": "^1.2.0",
+    "vuepress-plugin-baidu-autopush": "^1.0.1",
+    "vuepress-plugin-code-copy": "^1.0.4-alpha",
+    "vuepress-plugin-copyright": "^1.0.2",
+    "vuepress-plugin-sitemap": "^2.3.0"
+  }
+}
