@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>7-创建Maven工程 | ‍💻文档中心🕵️‍</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/images/logo.png">
+    <meta name="description" content="👓向积极拼搏的人生致敬🐱‍">
+    <meta name="robots" content="all">
+    <meta name="author" content="pdai">
+    <meta name="keywords" content="Java 全栈知识体系, java体系, java知识体系, java框架,java详解,java学习路线,java spring, java面试, 知识体系, java技术体系, java编程, java编程指南,java开发体系, java开发,java教程,java,java数据结构, 算法, 开发基础">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.ca69f72f.css" as="style"><link rel="preload" href="/assets/js/app.502e08f6.js" as="script"><link rel="preload" href="/assets/js/2.0f09e6be.js" as="script"><link rel="preload" href="/assets/js/56.12f92dfc.js" as="script"><link rel="prefetch" href="/assets/js/10.4c1dc210.js"><link rel="prefetch" href="/assets/js/11.99cc3583.js"><link rel="prefetch" href="/assets/js/12.0177bb11.js"><link rel="prefetch" href="/assets/js/13.8e027a2f.js"><link rel="prefetch" href="/assets/js/14.fa46abc6.js"><link rel="prefetch" href="/assets/js/15.a8f40cf6.js"><link rel="prefetch" href="/assets/js/16.a8875c62.js"><link rel="prefetch" href="/assets/js/17.eac8b89a.js"><link rel="prefetch" href="/assets/js/18.4c147709.js"><link rel="prefetch" href="/assets/js/19.f82c275e.js"><link rel="prefetch" href="/assets/js/20.a8b632a2.js"><link rel="prefetch" href="/assets/js/21.f4190e2d.js"><link rel="prefetch" href="/assets/js/22.34888a15.js"><link rel="prefetch" href="/assets/js/23.15ca53c7.js"><link rel="prefetch" href="/assets/js/24.74b20dd4.js"><link rel="prefetch" href="/assets/js/25.07ee0b8b.js"><link rel="prefetch" href="/assets/js/26.87e43ed5.js"><link rel="prefetch" href="/assets/js/27.13de7707.js"><link rel="prefetch" href="/assets/js/28.044470f4.js"><link rel="prefetch" href="/assets/js/29.e03e7055.js"><link rel="prefetch" href="/assets/js/3.23880a48.js"><link rel="prefetch" href="/assets/js/30.9de3f0dc.js"><link rel="prefetch" href="/assets/js/31.6401d4ec.js"><link rel="prefetch" href="/assets/js/32.9e121069.js"><link rel="prefetch" href="/assets/js/33.a36f8f67.js"><link rel="prefetch" href="/assets/js/34.ae6b425b.js"><link rel="prefetch" href="/assets/js/35.2d957521.js"><link rel="prefetch" href="/assets/js/36.95899458.js"><link rel="prefetch" href="/assets/js/37.49fbbd2e.js"><link rel="prefetch" href="/assets/js/38.7fe9a9da.js"><link rel="prefetch" href="/assets/js/39.0cf6b342.js"><link rel="prefetch" href="/assets/js/4.1d1724fd.js"><link rel="prefetch" href="/assets/js/40.e68df62e.js"><link rel="prefetch" href="/assets/js/41.49a59d67.js"><link rel="prefetch" href="/assets/js/42.b42f3a7c.js"><link rel="prefetch" href="/assets/js/43.f33303c8.js"><link rel="prefetch" href="/assets/js/44.a0e9aa87.js"><link rel="prefetch" href="/assets/js/45.8b5e2896.js"><link rel="prefetch" href="/assets/js/46.cf76256e.js"><link rel="prefetch" href="/assets/js/47.7642d6e3.js"><link rel="prefetch" href="/assets/js/48.46eed7cb.js"><link rel="prefetch" href="/assets/js/49.867667f3.js"><link rel="prefetch" href="/assets/js/5.00412747.js"><link rel="prefetch" href="/assets/js/50.96eb5818.js"><link rel="prefetch" href="/assets/js/51.fd811abe.js"><link rel="prefetch" href="/assets/js/52.896f937c.js"><link rel="prefetch" href="/assets/js/53.f542a809.js"><link rel="prefetch" href="/assets/js/54.b88354e5.js"><link rel="prefetch" href="/assets/js/55.c010b21d.js"><link rel="prefetch" href="/assets/js/57.7054b62c.js"><link rel="prefetch" href="/assets/js/58.60cc114a.js"><link rel="prefetch" href="/assets/js/6.bdaaf326.js"><link rel="prefetch" href="/assets/js/7.66797167.js"><link rel="prefetch" href="/assets/js/8.31d1c144.js"><link rel="prefetch" href="/assets/js/9.14282cc7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ca69f72f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.png" alt="‍💻文档中心🕵️‍" class="logo"> <span class="site-name can-hide">‍💻文档中心🕵️‍</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架应用" class="dropdown-title"><span class="title">框架应用</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架应用" class="mobile-dropdown-title"><span class="title">框架应用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring/1-框架概述.html" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/碎的/Azkaban批量工作流任务调度器.html" class="nav-link">
+  碎的
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/编程语言/Java/1-编程语言、软件与Java语言概述.html" class="nav-link">
+  Java
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件使用" class="dropdown-title"><span class="title">软件使用</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件使用" class="mobile-dropdown-title"><span class="title">软件使用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/软件使用/Maven/1-Maven简介与安装.html" class="nav-link">
+  Maven
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架应用" class="dropdown-title"><span class="title">框架应用</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架应用" class="mobile-dropdown-title"><span class="title">框架应用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring/1-框架概述.html" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/碎的/Azkaban批量工作流任务调度器.html" class="nav-link">
+  碎的
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/编程语言/Java/1-编程语言、软件与Java语言概述.html" class="nav-link">
+  Java
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件使用" class="dropdown-title"><span class="title">软件使用</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件使用" class="mobile-dropdown-title"><span class="title">软件使用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/软件使用/Maven/1-Maven简介与安装.html" class="nav-link">
+  Maven
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Maven</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/md/软件使用/Maven/1-Maven简介与安装.html" class="sidebar-link">1-Maven简介与安装</a></li><li><a href="/md/软件使用/Maven/2-POM文件.html" class="sidebar-link">2-POM文件</a></li><li><a href="/md/软件使用/Maven/3-构建生命周期.html" class="sidebar-link">3-构建生命周期</a></li><li><a href="/md/软件使用/Maven/4-构建配置文件.html" class="sidebar-link">4-构建配置文件</a></li><li><a href="/md/软件使用/Maven/5-仓库.html" class="sidebar-link">5-仓库</a></li><li><a href="/md/软件使用/Maven/6-插件.html" class="sidebar-link">6-插件</a></li><li><a href="/md/软件使用/Maven/7-创建Maven工程.html" class="active sidebar-link">7-创建Maven工程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/md/软件使用/Maven/7-创建Maven工程.html#maven-创建工程" class="sidebar-link">Maven - 创建工程</a></li></ul></li><li><a href="/md/软件使用/Maven/8-构建和测试工程.html" class="sidebar-link">8-构建和测试工程</a></li><li><a href="/md/软件使用/Maven/9-外部依赖.html" class="sidebar-link">9-外部依赖</a></li><li><a href="/md/软件使用/Maven/10-工程文档.html" class="sidebar-link">10-工程文档</a></li><li><a href="/md/软件使用/Maven/11-工程模板.html" class="sidebar-link">11-工程模版</a></li><li><a href="/md/软件使用/Maven/12-快照.html" class="sidebar-link">12-快照</a></li><li><a href="/md/软件使用/Maven/13-自动化构建.html" class="sidebar-link">13-自动化构建</a></li><li><a href="/md/软件使用/Maven/14-管理依赖.html" class="sidebar-link">14-管理依赖</a></li><li><a href="/md/软件使用/Maven/15-自动化部署.html" class="sidebar-link">15-自动化部署</a></li><li><a href="/md/软件使用/Maven/16-Web应用.html" class="sidebar-link">16-Web 应用</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_7-创建maven工程"><a href="#_7-创建maven工程" class="header-anchor">#</a> 7-创建Maven工程</h1> <h2 id="maven-创建工程"><a href="#maven-创建工程" class="header-anchor">#</a> Maven - 创建工程</h2> <p>Maven 使用**原型（archetype）**插件创建工程。要创建一个简单的 Java 应用，我们将使用 maven-archetype-quickstart 插件。在下面的例子中，我们将在 C:\MVN 文件夹下创建一个基于 maven 的 java 应用工程。</p> <p>我们打开命令控制台，跳转到 C:\MVN 目录，并执行下面的 <strong>mvn</strong> 命令。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>C:\MVN&gt;mvn archetype:generate
+-DgroupId=com.companyname.bank 
+-DartifactId=consumerBanking 
+-DarchetypeArtifactId=maven-archetype-quickstart 
+-DinteractiveMode=false
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>Maven 将开始处理，并将创建完成的 java 应用工程结构。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>INFO] Scanning for projects...
+[INFO] Searching repository for plugin with prefix: 'archetype'.
+[INFO] -------------------------------------------------------------------
+[INFO] Building Maven Default Project
+[INFO]    task-segment: [archetype:generate] (aggregator-style)
+[INFO] -------------------------------------------------------------------
+[INFO] Preparing archetype:generate
+[INFO] No goals needed for project - skipping
+[INFO] [archetype:generate {execution: default-cli}]
+[INFO] Generating project in Batch mode
+[INFO] -------------------------------------------------------------------
+[INFO] Using following parameters for creating project 
+ from Old (1.x) Archetype: maven-archetype-quickstart:1.0
+[INFO] -------------------------------------------------------------------
+[INFO] Parameter: groupId, Value: com.companyname.bank
+[INFO] Parameter: packageName, Value: com.companyname.bank
+[INFO] Parameter: package, Value: com.companyname.bank
+[INFO] Parameter: artifactId, Value: consumerBanking
+[INFO] Parameter: basedir, Value: C:\MVN
+[INFO] Parameter: version, Value: 1.0-SNAPSHOT
+[INFO] project created from Old (1.x) Archetype in dir: C:\MVN\consumerBanking
+[INFO] ------------------------------------------------------------------
+[INFO] BUILD SUCCESSFUL
+[INFO] ------------------------------------------------------------------
+[INFO] Total time: 14 seconds
+[INFO] Finished at: Tue Jul 10 15:38:58 IST 2012
+[INFO] Final Memory: 21M/124M
+[INFO] ------------------------------------------------------------------
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br></div></div><p>现在跳转到 C:/MVN 目录。有将看到一个名为 consumerBanking 的 java 应用工程（就像在 artifactId 中设定的一样）。Maven 使用一套标准的目录结构，就像这样：</p> <p><img src="media/9-project-structure.jpg" alt="Java application project structure"></p> <p>使用上面的例子，我们可以知道下面几个关键概念：</p> <table><thead><tr><th style="text-align:left;">文件夹结构</th> <th style="text-align:left;">描述</th></tr></thead> <tbody><tr><td style="text-align:left;">consumerBanking</td> <td style="text-align:left;">包含 src 文件夹和 pom.xml</td></tr> <tr><td style="text-align:left;">src/main/java contains</td> <td style="text-align:left;">java 代码文件在包结构下（com/companyName/bank）。</td></tr> <tr><td style="text-align:left;">src/main/test contains</td> <td style="text-align:left;">测试代码文件在包结构下（com/companyName/bank）。</td></tr> <tr><td style="text-align:left;">src/main/resources</td> <td style="text-align:left;">包含了 图片 / 属性 文件（在上面的例子中，我们需要手动创建这个结构）。</td></tr></tbody></table> <p>Maven 也创建了一个简单的 Java 源文件和 Java 测试文件。打开 C:\MVN\consumerBanking\src\main\java\com\companyname\bank 文件夹，可以看到 App.java 文件。</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>companyname<span class="token punctuation">.</span>bank</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Hello world!
+ *
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">App</span> 
+<span class="token punctuation">{</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span> <span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args <span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span> <span class="token string">&quot;Hello World!&quot;</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>打开 C:\MVN\consumerBanking\src\test\java\com\companyname\bank 文件夹，可以看到 AppTest.java。</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">package</span> <span class="token namespace">com<span class="token punctuation">.</span>companyname<span class="token punctuation">.</span>bank</span><span class="token punctuation">;</span>
+
+<span class="token keyword">import</span> <span class="token namespace">junit<span class="token punctuation">.</span>framework<span class="token punctuation">.</span></span><span class="token class-name">Test</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">junit<span class="token punctuation">.</span>framework<span class="token punctuation">.</span></span><span class="token class-name">TestCase</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token namespace">junit<span class="token punctuation">.</span>framework<span class="token punctuation">.</span></span><span class="token class-name">TestSuite</span><span class="token punctuation">;</span>
+
+<span class="token comment">/**
+ * Unit test for simple App.
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">AppTest</span> <span class="token keyword">extends</span> <span class="token class-name">TestCase</span> 
+<span class="token punctuation">{</span>
+    <span class="token comment">/**
+     * Create the test case
+     *
+     * @param testName name of the test case
+     */</span>
+    <span class="token keyword">public</span> <span class="token class-name">AppTest</span><span class="token punctuation">(</span> <span class="token class-name">String</span> testName <span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">super</span><span class="token punctuation">(</span> testName <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * @return the suite of tests being tested
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token class-name">Test</span> <span class="token function">suite</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">TestSuite</span><span class="token punctuation">(</span> <span class="token class-name">AppTest</span><span class="token punctuation">.</span><span class="token keyword">class</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token comment">/**
+     * Rigourous Test :-)
+     */</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">testApp</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        <span class="token function">assertTrue</span><span class="token punctuation">(</span> <span class="token boolean">true</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br></div></div><p>开发人员需要将他们的文件按照上面表格中提到的结构放置好，接下来 Maven 将会搞定所有构建相关的复杂任务。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/md/软件使用/Maven/6-插件.html" class="prev">
+        6-插件
+      </a></span> <span class="next"><a href="/md/软件使用/Maven/8-构建和测试工程.html">
+        8-构建和测试工程
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.502e08f6.js" defer></script><script src="/assets/js/2.0f09e6be.js" defer></script><script src="/assets/js/56.12f92dfc.js" defer></script>
+  </body>
+</html>

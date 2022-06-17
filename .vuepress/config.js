@@ -1,6 +1,6 @@
 module.exports = {
     port: "8080",
-    dest: "web_show",
+    dest: "docs",
     base: "/",
     markdown: {
         lineNumbers: true,
