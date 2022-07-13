@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>9-Gateway网关 | ‍💻文档中心🕵️‍</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/images/logo.png">
+    <meta name="description" content="👓向积极拼搏的人生致敬🐱‍">
+    <meta name="robots" content="all">
+    <meta name="author" content="pdai">
+    <meta name="keywords" content="Java 全栈知识体系, java体系, java知识体系, java框架,java详解,java学习路线,java spring, java面试, 知识体系, java技术体系, java编程, java编程指南,java开发体系, java开发,java教程,java,java数据结构, 算法, 开发基础">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.d69a2479.css" as="style"><link rel="preload" href="/assets/js/app.525076fd.js" as="script"><link rel="preload" href="/assets/js/2.5edb84e1.js" as="script"><link rel="preload" href="/assets/js/17.2c40fbeb.js" as="script"><link rel="prefetch" href="/assets/js/10.ffcff59a.js"><link rel="prefetch" href="/assets/js/11.79ac7a95.js"><link rel="prefetch" href="/assets/js/12.c0c778db.js"><link rel="prefetch" href="/assets/js/13.f8d9a38c.js"><link rel="prefetch" href="/assets/js/14.b41d4940.js"><link rel="prefetch" href="/assets/js/15.7eb85647.js"><link rel="prefetch" href="/assets/js/16.81d5472c.js"><link rel="prefetch" href="/assets/js/18.92f3ded5.js"><link rel="prefetch" href="/assets/js/19.53d9568d.js"><link rel="prefetch" href="/assets/js/20.bf46cc2f.js"><link rel="prefetch" href="/assets/js/21.a3fd62bf.js"><link rel="prefetch" href="/assets/js/22.4a96343c.js"><link rel="prefetch" href="/assets/js/23.6811fbed.js"><link rel="prefetch" href="/assets/js/24.a02bcdcf.js"><link rel="prefetch" href="/assets/js/25.fd849052.js"><link rel="prefetch" href="/assets/js/26.9786f083.js"><link rel="prefetch" href="/assets/js/27.3a92caf9.js"><link rel="prefetch" href="/assets/js/28.ddf8f7a2.js"><link rel="prefetch" href="/assets/js/29.f5b4ff8d.js"><link rel="prefetch" href="/assets/js/3.58696026.js"><link rel="prefetch" href="/assets/js/30.c590a6df.js"><link rel="prefetch" href="/assets/js/31.341fb0be.js"><link rel="prefetch" href="/assets/js/32.9cb0d81c.js"><link rel="prefetch" href="/assets/js/33.a2dbc214.js"><link rel="prefetch" href="/assets/js/34.ed9c7249.js"><link rel="prefetch" href="/assets/js/35.f896f03a.js"><link rel="prefetch" href="/assets/js/36.37197ead.js"><link rel="prefetch" href="/assets/js/37.6f1d8903.js"><link rel="prefetch" href="/assets/js/38.1be3f65d.js"><link rel="prefetch" href="/assets/js/39.f20ea790.js"><link rel="prefetch" href="/assets/js/4.000ef68f.js"><link rel="prefetch" href="/assets/js/40.3df3f67a.js"><link rel="prefetch" href="/assets/js/41.21c513f6.js"><link rel="prefetch" href="/assets/js/42.bff6c2d5.js"><link rel="prefetch" href="/assets/js/43.1c0719ca.js"><link rel="prefetch" href="/assets/js/44.c13ee70f.js"><link rel="prefetch" href="/assets/js/45.185e51bc.js"><link rel="prefetch" href="/assets/js/46.7b483404.js"><link rel="prefetch" href="/assets/js/47.a36eb1d8.js"><link rel="prefetch" href="/assets/js/48.74432289.js"><link rel="prefetch" href="/assets/js/49.79834c70.js"><link rel="prefetch" href="/assets/js/5.ed87338b.js"><link rel="prefetch" href="/assets/js/50.ed27fb48.js"><link rel="prefetch" href="/assets/js/51.b6f7ffe3.js"><link rel="prefetch" href="/assets/js/52.b7926368.js"><link rel="prefetch" href="/assets/js/53.13d1553e.js"><link rel="prefetch" href="/assets/js/54.adb753b1.js"><link rel="prefetch" href="/assets/js/55.eccbb534.js"><link rel="prefetch" href="/assets/js/56.0067f496.js"><link rel="prefetch" href="/assets/js/57.9e7d4d2e.js"><link rel="prefetch" href="/assets/js/58.59a85746.js"><link rel="prefetch" href="/assets/js/59.8372c665.js"><link rel="prefetch" href="/assets/js/6.1c71f0ba.js"><link rel="prefetch" href="/assets/js/60.65afc420.js"><link rel="prefetch" href="/assets/js/61.75e8aa66.js"><link rel="prefetch" href="/assets/js/62.cffb01ed.js"><link rel="prefetch" href="/assets/js/63.1b0bc7cd.js"><link rel="prefetch" href="/assets/js/64.c69e7b95.js"><link rel="prefetch" href="/assets/js/65.879f80c9.js"><link rel="prefetch" href="/assets/js/66.797d164d.js"><link rel="prefetch" href="/assets/js/67.2d1a0e78.js"><link rel="prefetch" href="/assets/js/7.9551e9e0.js"><link rel="prefetch" href="/assets/js/8.895e1f73.js"><link rel="prefetch" href="/assets/js/9.00eb4112.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d69a2479.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.png" alt="‍💻文档中心🕵️‍" class="logo"> <span class="site-name can-hide">‍💻文档中心🕵️‍</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架应用" class="dropdown-title"><span class="title">框架应用</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架应用" class="mobile-dropdown-title"><span class="title">框架应用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring/1-框架概述.html" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring Cloud/1-微服务概述.html" class="nav-link">
+  Spring Cloud
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/碎的/Azkaban批量工作流任务调度器.html" class="nav-link">
+  碎的
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/编程语言/Java/1-编程语言、软件与Java语言概述.html" class="nav-link">
+  Java
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件使用" class="dropdown-title"><span class="title">软件使用</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件使用" class="mobile-dropdown-title"><span class="title">软件使用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/软件使用/Maven/1-Maven简介与安装.html" class="nav-link">
+  Maven
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架应用" class="dropdown-title"><span class="title">框架应用</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架应用" class="mobile-dropdown-title"><span class="title">框架应用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring/1-框架概述.html" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring Cloud/1-微服务概述.html" class="nav-link">
+  Spring Cloud
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/碎的/Azkaban批量工作流任务调度器.html" class="nav-link">
+  碎的
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/编程语言/Java/1-编程语言、软件与Java语言概述.html" class="nav-link">
+  Java
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件使用" class="dropdown-title"><span class="title">软件使用</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件使用" class="mobile-dropdown-title"><span class="title">软件使用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/软件使用/Maven/1-Maven简介与安装.html" class="nav-link">
+  Maven
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Spring Cloud</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/md/框架应用/Spring Cloud/1-微服务概述.html" class="sidebar-link">1-微服务概述</a></li><li><a href="/md/框架应用/Spring Cloud/2-微服务技术选型.html" class="sidebar-link">2-微服务技术选型</a></li><li><a href="/md/框架应用/Spring Cloud/3-Eureka注册中心.html" class="sidebar-link">3-Eureka注册中心</a></li><li><a href="/md/框架应用/Spring Cloud/4-Ribbon负载均衡.html" class="sidebar-link">4-Ribbon负载均衡</a></li><li><a href="/md/框架应用/Spring Cloud/5-Nacos注册中心.html" class="sidebar-link">5-Nacos注册中心</a></li><li><a href="/md/框架应用/Spring Cloud/6-Nacos配置中心.html" class="sidebar-link">6-Nacos配置中心</a></li><li><a href="/md/框架应用/Spring Cloud/7-Nacos集群.html" class="sidebar-link">7-Nacos集群</a></li><li><a href="/md/框架应用/Spring Cloud/8-Feign远程调用.html" class="sidebar-link">8-Feign远程调用</a></li><li><a href="/md/框架应用/Spring Cloud/9-Gateway网关.html" class="active sidebar-link">9-Gateway网关</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/9-Gateway网关.html#网关简介" class="sidebar-link">网关简介</a></li><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/9-Gateway网关.html#搭建网关" class="sidebar-link">搭建网关</a></li><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/9-Gateway网关.html#断言工厂" class="sidebar-link">断言工厂</a></li><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/9-Gateway网关.html#路由-网关过滤器" class="sidebar-link">路由/网关过滤器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/9-Gateway网关.html#介绍" class="sidebar-link">介绍</a></li><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/9-Gateway网关.html#实践" class="sidebar-link">实践</a></li></ul></li><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/9-Gateway网关.html#全局过滤器" class="sidebar-link">全局过滤器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/9-Gateway网关.html#过滤排序" class="sidebar-link">过滤排序</a></li></ul></li><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/9-Gateway网关.html#多种过滤器执行顺序" class="sidebar-link">多种过滤器执行顺序</a></li><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/9-Gateway网关.html#cors跨域配置" class="sidebar-link">cors跨域配置</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_9-gateway网关"><a href="#_9-gateway网关" class="header-anchor">#</a> 9-Gateway网关</h1> <h2 id="网关简介"><a href="#网关简介" class="header-anchor">#</a> 网关简介</h2> <p>网关用来拦截所有从客户端访问的请求，进行身份的验证以及具体服务的路由，再就是负载均衡，服务限流等功能：
+<img src="media/1886586-20220626115743024-294968511.png" alt="image">
+网关就是对服务的一种保护，保护服务的访问量以及敏感数据权限管理等。
+网关可以用gateway和zuul来实现：
+<img src="media/1886586-20220626115800993-314120979.png" alt="image"> <img src="media/1886586-20220626115807973-1383397415.png" alt="image"></p> <h2 id="搭建网关"><a href="#搭建网关" class="header-anchor">#</a> 搭建网关</h2> <p>创建新的项目并继承付父项目引入依赖：
+<img src="media/1886586-20220626115837186-383335490.png" alt="image"></p> <p>网关是作为一个服务要注册到nacos的，所以要引入nacos客户端依赖并注册到nacos。
+在此项目的配置文件中，将服务注册到nacos，并且配置路由的相关信息：
+<img src="media/1886586-20220626115844826-910635944.png" alt="image">
+其中routes中要写一个对象，其中uri可以写路径，或者些lb类型路径，lb类型路径能够提供负载均衡功能，而路径只是单纯的访问没有负载功能。
+<img src="media/1886586-20220626115859568-282111827.png" alt="image"></p> <p>配置中还要存在断言集合，也就是路径在符合某种格式的前提下访问到uri所指定的服务中去。
+<img src="media/1886586-20220626115913829-551922950.png" alt="image">
+未来访问的时候，都要从网关端口去访问，而不直接访问服务了。</p> <p>网关中并没有任何业务实现，只是将请求分发到其他服务中：
+<img src="media/1886586-20220626115932287-525100892.png" alt="image"></p> <p>小总结：
+<img src="media/1886586-20220626115943753-1168510344.png" alt="image"></p> <h2 id="断言工厂"><a href="#断言工厂" class="header-anchor">#</a> 断言工厂</h2> <p>断言也就是路径在符合某种格式的前提下访问到uri所指定的服务中去。
+<img src="media/1886586-20220626120023290-1988282741.png" alt="image"></p> <p><img src="media/1886586-20220626120043001-302474156.png" alt="image"> <img src="media/1886586-20220626120045607-1153398163.png" alt="image"></p> <p>断言工厂的具体配置内容可以在Spring官网上查看：
+<img src="media/1886586-20220626120052691-1975720981.png" alt="image"></p> <p>同一个服务可以有多个路由方式：
+<img src="media/1886586-20220626120104187-1132451855.png" alt="image"></p> <p>如果任何一个工厂断言不符合都无法正常访问，当所有都不符合则404返回，多个符合的情况下以靠前的条件为准。</p> <h2 id="路由-网关过滤器"><a href="#路由-网关过滤器" class="header-anchor">#</a> 路由/网关过滤器</h2> <h3 id="介绍"><a href="#介绍" class="header-anchor">#</a> 介绍</h3> <p>过滤器工厂主要就是对请求及响应做操作，可以操作请求头请求体等内容，并且过滤器工厂有很多个：
+<img src="media/1886586-20220626120146488-478214385.png" alt="image"> <img src="media/1886586-20220626120148060-1970723301.png" alt="image"></p> <p>具体的过滤器工厂可以从Spring官网查看：
+<img src="media/1886586-20220626120154710-369708153.png" alt="image"></p> <h3 id="实践"><a href="#实践" class="header-anchor">#</a> 实践</h3> <p><img src="media/1886586-20220626120226716-2131186068.png" alt="image">
+在控制层中可以通过注解获取请求头信息
+<img src="media/1886586-20220626120233237-735619154.png" alt="image">
+其中requestheaderi表示从请求头中获取信息，required表示此参数不是必填的，也就是可以不携带此请求头。</p> <p>如果对所有的服务都添加同一个请求头，可以使用默认过滤器来完成：
+<img src="media/1886586-20220626120256396-1611852822.png" alt="image"></p> <p>小总结：
+<img src="media/1886586-20220626120302658-576916085.png" alt="image"></p> <h2 id="全局过滤器"><a href="#全局过滤器" class="header-anchor">#</a> 全局过滤器</h2> <p>全局过滤器也是用于处理所有进入网关的请求和响应，实际上和上文的默认过滤器是一样的。区别在于全局过滤器可以自定义代码实现，而上文的过滤器是固定的处理逻辑。</p> <p>具体的实现方案就是实现GlobalFilter接口：
+<img src="media/1886586-20220626120355424-93800477.png" alt="image">
+exchange表示请求上下文，请求和响应都可以从中获取，chain就是过滤器中的过滤链，可以放行此过滤。</p> <p>进行判断用户身份：
+<img src="media/1886586-20220626120425459-1917215981.png" alt="image"></p> <p>下文是过滤器的整体代码，其中request对象通过exchenge来获得，其中getFirst方法表示获取到第一个匹配的参数。
+当鉴权失败的时候，可以直接返回setConplete方法，但是为了严谨，在请求头中添加了StatusCode为未登录401状态：
+<img src="media/1886586-20220626120455371-20216740.png" alt="image"></p> <p>代码编写完成之后，还要对此类进行配置：
+<img src="media/1886586-20220626120502089-819828926.png" alt="image">
+compnent表示注册为组件，order是用来对过滤器进行排序的。</p> <h3 id="过滤排序"><a href="#过滤排序" class="header-anchor">#</a> 过滤排序</h3> <p>一种方式是通过Order注解来完成，还有一种方式可以继承Orderd接口，实现其中的方法来返回排序数字。
+全局过滤器一定要有order顺序！！！
+<img src="media/1886586-20220626120539598-1476998036.png" alt="image"></p> <p>小总结：
+<img src="media/1886586-20220626120545521-1489977461.png" alt="image"></p> <h2 id="多种过滤器执行顺序"><a href="#多种过滤器执行顺序" class="header-anchor">#</a> 多种过滤器执行顺序</h2> <p>上文讲了三中过滤器，一个是服务路由过滤器，一个默认过滤器（在路由过滤器里讲的），还有全局过滤器。
+在请求路由后，因为只有发送请求来确定路由后才能确定走哪条过滤器。执行顺序如下图：
+<img src="media/1886586-20220626120704423-708794552.png" alt="image"></p> <p>虽然三种过滤器都是不同类型的，但是还是可以存在于一个过滤器链路中的。
+其中路由过滤器和默认过滤器配置方式相似，最终产生的对象都由AddRequestHeaderGatewayFilterFactory来生产，都叫GateWayFilter。
+后来的全局过滤器会经过FilteringWebHandler类中的GatewayFilterAdapter进行适配：
+<img src="media/1886586-20220626120720254-896492767.png" alt="image">
+此类通过适配器模式将全局过滤器GlobalFilter转换成了GatewayFilter进行适配，并将过滤器加入了过滤链中。
+<img src="media/1886586-20220626120726474-1537208183.png" alt="image"></p> <p>所谓的声明顺序，也就是路由过滤器和默认过滤器在filters属性中添加的元素的顺序：
+<img src="media/1886586-20220626120735651-1600840624.png" alt="image"></p> <p>当不同类型的过滤器的order值相同时，将采用以下执行顺序：
+<img src="media/1886586-20220626120746890-1230785881.png" alt="image"></p> <p><img src="media/1886586-20220626120751343-221951615.png" alt="image"></p> <h2 id="cors跨域配置"><a href="#cors跨域配置" class="header-anchor">#</a> cors跨域配置</h2> <p><img src="media/1886586-20220626120804217-415973185.png" alt="image"></p> <p>cors的本质就是浏览器跨域前询问目标服务器是否可以跨域，然后再决定是否进行访问。
+跨域只需要从gateway做配置即可：
+<img src="media/1886586-20220626120813994-842162124.png" alt="image"></p> <p>询问是否跨域的请求是options类型，其中add to simple url handler mapping表示放开询问请求。</p> <p>跨域有效期内，浏览器无需再次询问，可以直接跨域，这样可以解决频繁询问导致的多次请求缓慢的问题。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/md/框架应用/Spring Cloud/8-Feign远程调用.html" class="prev">
+        8-Feign远程调用
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.525076fd.js" defer></script><script src="/assets/js/2.5edb84e1.js" defer></script><script src="/assets/js/17.2c40fbeb.js" defer></script>
+  </body>
+</html>

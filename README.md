@@ -20,5 +20,3 @@ footer: © 2022 💖 agoodjavaboy.github.io
 ---
 
 ![live](/images/b476f6c8d95454ab3e3263abfe7b67f6.jpg)
-
-<Vssue />

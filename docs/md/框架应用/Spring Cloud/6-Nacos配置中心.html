@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>6-Nacos配置中心 | ‍💻文档中心🕵️‍</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/images/logo.png">
+    <meta name="description" content="👓向积极拼搏的人生致敬🐱‍">
+    <meta name="robots" content="all">
+    <meta name="author" content="pdai">
+    <meta name="keywords" content="Java 全栈知识体系, java体系, java知识体系, java框架,java详解,java学习路线,java spring, java面试, 知识体系, java技术体系, java编程, java编程指南,java开发体系, java开发,java教程,java,java数据结构, 算法, 开发基础">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.d69a2479.css" as="style"><link rel="preload" href="/assets/js/app.525076fd.js" as="script"><link rel="preload" href="/assets/js/2.5edb84e1.js" as="script"><link rel="preload" href="/assets/js/14.b41d4940.js" as="script"><link rel="prefetch" href="/assets/js/10.ffcff59a.js"><link rel="prefetch" href="/assets/js/11.79ac7a95.js"><link rel="prefetch" href="/assets/js/12.c0c778db.js"><link rel="prefetch" href="/assets/js/13.f8d9a38c.js"><link rel="prefetch" href="/assets/js/15.7eb85647.js"><link rel="prefetch" href="/assets/js/16.81d5472c.js"><link rel="prefetch" href="/assets/js/17.2c40fbeb.js"><link rel="prefetch" href="/assets/js/18.92f3ded5.js"><link rel="prefetch" href="/assets/js/19.53d9568d.js"><link rel="prefetch" href="/assets/js/20.bf46cc2f.js"><link rel="prefetch" href="/assets/js/21.a3fd62bf.js"><link rel="prefetch" href="/assets/js/22.4a96343c.js"><link rel="prefetch" href="/assets/js/23.6811fbed.js"><link rel="prefetch" href="/assets/js/24.a02bcdcf.js"><link rel="prefetch" href="/assets/js/25.fd849052.js"><link rel="prefetch" href="/assets/js/26.9786f083.js"><link rel="prefetch" href="/assets/js/27.3a92caf9.js"><link rel="prefetch" href="/assets/js/28.ddf8f7a2.js"><link rel="prefetch" href="/assets/js/29.f5b4ff8d.js"><link rel="prefetch" href="/assets/js/3.58696026.js"><link rel="prefetch" href="/assets/js/30.c590a6df.js"><link rel="prefetch" href="/assets/js/31.341fb0be.js"><link rel="prefetch" href="/assets/js/32.9cb0d81c.js"><link rel="prefetch" href="/assets/js/33.a2dbc214.js"><link rel="prefetch" href="/assets/js/34.ed9c7249.js"><link rel="prefetch" href="/assets/js/35.f896f03a.js"><link rel="prefetch" href="/assets/js/36.37197ead.js"><link rel="prefetch" href="/assets/js/37.6f1d8903.js"><link rel="prefetch" href="/assets/js/38.1be3f65d.js"><link rel="prefetch" href="/assets/js/39.f20ea790.js"><link rel="prefetch" href="/assets/js/4.000ef68f.js"><link rel="prefetch" href="/assets/js/40.3df3f67a.js"><link rel="prefetch" href="/assets/js/41.21c513f6.js"><link rel="prefetch" href="/assets/js/42.bff6c2d5.js"><link rel="prefetch" href="/assets/js/43.1c0719ca.js"><link rel="prefetch" href="/assets/js/44.c13ee70f.js"><link rel="prefetch" href="/assets/js/45.185e51bc.js"><link rel="prefetch" href="/assets/js/46.7b483404.js"><link rel="prefetch" href="/assets/js/47.a36eb1d8.js"><link rel="prefetch" href="/assets/js/48.74432289.js"><link rel="prefetch" href="/assets/js/49.79834c70.js"><link rel="prefetch" href="/assets/js/5.ed87338b.js"><link rel="prefetch" href="/assets/js/50.ed27fb48.js"><link rel="prefetch" href="/assets/js/51.b6f7ffe3.js"><link rel="prefetch" href="/assets/js/52.b7926368.js"><link rel="prefetch" href="/assets/js/53.13d1553e.js"><link rel="prefetch" href="/assets/js/54.adb753b1.js"><link rel="prefetch" href="/assets/js/55.eccbb534.js"><link rel="prefetch" href="/assets/js/56.0067f496.js"><link rel="prefetch" href="/assets/js/57.9e7d4d2e.js"><link rel="prefetch" href="/assets/js/58.59a85746.js"><link rel="prefetch" href="/assets/js/59.8372c665.js"><link rel="prefetch" href="/assets/js/6.1c71f0ba.js"><link rel="prefetch" href="/assets/js/60.65afc420.js"><link rel="prefetch" href="/assets/js/61.75e8aa66.js"><link rel="prefetch" href="/assets/js/62.cffb01ed.js"><link rel="prefetch" href="/assets/js/63.1b0bc7cd.js"><link rel="prefetch" href="/assets/js/64.c69e7b95.js"><link rel="prefetch" href="/assets/js/65.879f80c9.js"><link rel="prefetch" href="/assets/js/66.797d164d.js"><link rel="prefetch" href="/assets/js/67.2d1a0e78.js"><link rel="prefetch" href="/assets/js/7.9551e9e0.js"><link rel="prefetch" href="/assets/js/8.895e1f73.js"><link rel="prefetch" href="/assets/js/9.00eb4112.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d69a2479.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.png" alt="‍💻文档中心🕵️‍" class="logo"> <span class="site-name can-hide">‍💻文档中心🕵️‍</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架应用" class="dropdown-title"><span class="title">框架应用</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架应用" class="mobile-dropdown-title"><span class="title">框架应用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring/1-框架概述.html" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring Cloud/1-微服务概述.html" class="nav-link">
+  Spring Cloud
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/碎的/Azkaban批量工作流任务调度器.html" class="nav-link">
+  碎的
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/编程语言/Java/1-编程语言、软件与Java语言概述.html" class="nav-link">
+  Java
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件使用" class="dropdown-title"><span class="title">软件使用</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件使用" class="mobile-dropdown-title"><span class="title">软件使用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/软件使用/Maven/1-Maven简介与安装.html" class="nav-link">
+  Maven
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架应用" class="dropdown-title"><span class="title">框架应用</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架应用" class="mobile-dropdown-title"><span class="title">框架应用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring/1-框架概述.html" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring Cloud/1-微服务概述.html" class="nav-link">
+  Spring Cloud
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/碎的/Azkaban批量工作流任务调度器.html" class="nav-link">
+  碎的
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/编程语言/Java/1-编程语言、软件与Java语言概述.html" class="nav-link">
+  Java
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件使用" class="dropdown-title"><span class="title">软件使用</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件使用" class="mobile-dropdown-title"><span class="title">软件使用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/软件使用/Maven/1-Maven简介与安装.html" class="nav-link">
+  Maven
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Spring Cloud</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/md/框架应用/Spring Cloud/1-微服务概述.html" class="sidebar-link">1-微服务概述</a></li><li><a href="/md/框架应用/Spring Cloud/2-微服务技术选型.html" class="sidebar-link">2-微服务技术选型</a></li><li><a href="/md/框架应用/Spring Cloud/3-Eureka注册中心.html" class="sidebar-link">3-Eureka注册中心</a></li><li><a href="/md/框架应用/Spring Cloud/4-Ribbon负载均衡.html" class="sidebar-link">4-Ribbon负载均衡</a></li><li><a href="/md/框架应用/Spring Cloud/5-Nacos注册中心.html" class="sidebar-link">5-Nacos注册中心</a></li><li><a href="/md/框架应用/Spring Cloud/6-Nacos配置中心.html" class="active sidebar-link">6-Nacos配置中心</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/6-Nacos配置中心.html#配置中心" class="sidebar-link">配置中心</a></li><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/6-Nacos配置中心.html#nacos应用" class="sidebar-link">Nacos应用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/6-Nacos配置中心.html#创建配置" class="sidebar-link">创建配置</a></li><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/6-Nacos配置中心.html#启动流程与实践" class="sidebar-link">启动流程与实践</a></li></ul></li><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/6-Nacos配置中心.html#配置热更新" class="sidebar-link">配置热更新</a></li><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/6-Nacos配置中心.html#配置共享" class="sidebar-link">配置共享</a></li></ul></li><li><a href="/md/框架应用/Spring Cloud/7-Nacos集群.html" class="sidebar-link">7-Nacos集群</a></li><li><a href="/md/框架应用/Spring Cloud/8-Feign远程调用.html" class="sidebar-link">8-Feign远程调用</a></li><li><a href="/md/框架应用/Spring Cloud/9-Gateway网关.html" class="sidebar-link">9-Gateway网关</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_6-nacos配置中心"><a href="#_6-nacos配置中心" class="header-anchor">#</a> 6-Nacos配置中心</h1> <h2 id="配置中心"><a href="#配置中心" class="header-anchor">#</a> 配置中心</h2> <p>注册中心注册的服务可能达到很多，每个微服务的配置都要单独设置，配置完成之后都要重启启动。
+需要一个配置管理服务统一管理所有服务的配置加上本地的配置进行结合来使用。并且每个配置修改之后还要完成热更新情况，这样无需重启服务即可更新配置。
+<img src="media/1886586-20220626113900633-2034571567.png" alt="image"></p> <h2 id="nacos应用"><a href="#nacos应用" class="header-anchor">#</a> Nacos应用</h2> <h3 id="创建配置"><a href="#创建配置" class="header-anchor">#</a> 创建配置</h3> <p>进行新建配置时，每个data id不能重复，如果重复将导致配置冲突：
+<img src="media/1886586-20220626113919147-2125854985.png" alt="image"></p> <p>ID命名时通常叫做 服务名-运行环境.yaml：
+<img src="media/1886586-20220626113954531-2135550828.png" alt="image">
+分组可以用在默认环境中，描述是中文的描述，配置内容中主要写开关类型等经常更换的配置项。</p> <h3 id="启动流程与实践"><a href="#启动流程与实践" class="header-anchor">#</a> 启动流程与实践</h3> <p>进行项目启动的时候，会完成如下的流程：
+<img src="media/1886586-20220626114043767-270112173.png" alt="image"></p> <p>但是现在nacos的地址放在了application配置文件中，所以理应nacos中的配置是无法提前感知到的，所以就要用到boostrap配置文件。bootstrap配置文件的优先级高于application，可以讲nacos的地址配置到bootstrap中提前进行nacos读取，然后再读取application进行整合：
+<img src="media/1886586-20220626114055006-422068440.png" alt="image"></p> <p><img src="media/1886586-20220626114124845-171735134.png" alt="image">
+其中服务名称/开发环境和配置文件后缀名就能定位到nacos的配置。</p> <p>验证是否可以应用配置中心，通过@Value注解获取配置中心的内容进行读取。</p> <h2 id="配置热更新"><a href="#配置热更新" class="header-anchor">#</a> 配置热更新</h2> <p>配置热更新方法一：在@Value注解所在类上添加RefreshScope注解：
+<img src="media/1886586-20220626114213394-375559828.png" alt="image"></p> <p>配置热更新方法二：通过配置类：
+<img src="media/1886586-20220626114222582-291916200.png" alt="image">
+使用这种方式，prefix所表示的是前缀，属性名则表示前缀后面的内容。通过这种方式可以将配置参数注入到实例中以供调用。
+<img src="media/1886586-20220626114246221-526186139.png" alt="image">
+在使用的时候，要对配置类进行注入，然后采用get方法进行属性内容的调用。</p> <p>小总结：
+<img src="media/1886586-20220626114304916-81589198.png" alt="image"></p> <h2 id="配置共享"><a href="#配置共享" class="header-anchor">#</a> 配置共享</h2> <p>配置共享在多个环境运行过程中都会用到，那就可以一套配置在多个环境中同时使用。</p> <p>微服务启动的时候会读取多个配置文件：</p> <ol><li>上文所属的通过服务名/环境/后缀组成的配置文件;</li> <li>由服务名/后缀名组成的配置文件;
+也就说，第一种配置文件是分环境的，第二种是分服务的，所以对于第二种配置文件，无论环境如何服务都讲读取此配置文件。
+<img src="media/1886586-20220626114422732-522885397.png" alt="image"> <img src="media/1886586-20220626114430397-1482766567.png" alt="image"></li></ol> <p>对于项目运行环境的更改可以在项目配置中修改Active profiles进行修改，这样就就无需修改配置文件即可：
+<img src="media/1886586-20220626114439983-983183994.png" alt="image">
+控制台中也会看到项目启动主要读取了几个配置文件：
+<img src="media/1886586-20220626114450581-2040199344.png" alt="image"></p> <p><strong>优先级</strong>
+当同一个配置项在本地/环境/环境共享都有配置时，本地会被共享环境覆盖，共享环境会被环境配置覆盖。
+也就是本地配置优先级最低，远端较高；远端中精确配置高于共享配置。
+<img src="media/1886586-20220626114522119-1139282007.png" alt="image"> <img src="media/1886586-20220626114525779-519814378.png" alt="image"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/md/框架应用/Spring Cloud/5-Nacos注册中心.html" class="prev">
+        5-Nacos注册中心
+      </a></span> <span class="next"><a href="/md/框架应用/Spring Cloud/7-Nacos集群.html">
+        7-Nacos集群
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.525076fd.js" defer></script><script src="/assets/js/2.5edb84e1.js" defer></script><script src="/assets/js/14.b41d4940.js" defer></script>
+  </body>
+</html>

@@ -7,6 +7,14 @@ module.exports = {
             "title": "Spring"
         }
     ],
+    "/md/框架应用/Spring Cloud/": [
+        {
+            "children": ["1-微服务概述.md","2-微服务技术选型.md","3-Eureka注册中心.md","4-Ribbon负载均衡.md","5-Nacos注册中心.md","6-Nacos配置中心.md","7-Nacos集群.md","8-Feign远程调用.md","9-Gateway网关.md"],
+            "collapsable": false,
+            "sidebarDepth": 10,
+            "title": "Spring Cloud"
+        }
+    ],
     "/md/框架应用/碎的/": [
         {
             "children": ["Azkaban批量工作流任务调度器.md","DataX离线数据同步工具.md","ETL数据整理迁移.md","JUC理论基础.md","JWT简介与实现.md","Mybatis流式查询.md","oauth2协议.md","Postgresql跨库查询.md","Redis集群搭建.md","SpringBoot整合Shiro.md","SpringSecurity应用.md","SpringSecutiry整合JWT.md","SpringWebflux非阻塞控制层框架.md"],

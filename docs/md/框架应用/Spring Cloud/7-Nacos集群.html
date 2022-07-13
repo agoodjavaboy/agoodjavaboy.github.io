@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>7-Nacos集群 | ‍💻文档中心🕵️‍</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    <link rel="icon" href="/images/logo.png">
+    <meta name="description" content="👓向积极拼搏的人生致敬🐱‍">
+    <meta name="robots" content="all">
+    <meta name="author" content="pdai">
+    <meta name="keywords" content="Java 全栈知识体系, java体系, java知识体系, java框架,java详解,java学习路线,java spring, java面试, 知识体系, java技术体系, java编程, java编程指南,java开发体系, java开发,java教程,java,java数据结构, 算法, 开发基础">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="preload" href="/assets/css/0.styles.d69a2479.css" as="style"><link rel="preload" href="/assets/js/app.525076fd.js" as="script"><link rel="preload" href="/assets/js/2.5edb84e1.js" as="script"><link rel="preload" href="/assets/js/15.7eb85647.js" as="script"><link rel="prefetch" href="/assets/js/10.ffcff59a.js"><link rel="prefetch" href="/assets/js/11.79ac7a95.js"><link rel="prefetch" href="/assets/js/12.c0c778db.js"><link rel="prefetch" href="/assets/js/13.f8d9a38c.js"><link rel="prefetch" href="/assets/js/14.b41d4940.js"><link rel="prefetch" href="/assets/js/16.81d5472c.js"><link rel="prefetch" href="/assets/js/17.2c40fbeb.js"><link rel="prefetch" href="/assets/js/18.92f3ded5.js"><link rel="prefetch" href="/assets/js/19.53d9568d.js"><link rel="prefetch" href="/assets/js/20.bf46cc2f.js"><link rel="prefetch" href="/assets/js/21.a3fd62bf.js"><link rel="prefetch" href="/assets/js/22.4a96343c.js"><link rel="prefetch" href="/assets/js/23.6811fbed.js"><link rel="prefetch" href="/assets/js/24.a02bcdcf.js"><link rel="prefetch" href="/assets/js/25.fd849052.js"><link rel="prefetch" href="/assets/js/26.9786f083.js"><link rel="prefetch" href="/assets/js/27.3a92caf9.js"><link rel="prefetch" href="/assets/js/28.ddf8f7a2.js"><link rel="prefetch" href="/assets/js/29.f5b4ff8d.js"><link rel="prefetch" href="/assets/js/3.58696026.js"><link rel="prefetch" href="/assets/js/30.c590a6df.js"><link rel="prefetch" href="/assets/js/31.341fb0be.js"><link rel="prefetch" href="/assets/js/32.9cb0d81c.js"><link rel="prefetch" href="/assets/js/33.a2dbc214.js"><link rel="prefetch" href="/assets/js/34.ed9c7249.js"><link rel="prefetch" href="/assets/js/35.f896f03a.js"><link rel="prefetch" href="/assets/js/36.37197ead.js"><link rel="prefetch" href="/assets/js/37.6f1d8903.js"><link rel="prefetch" href="/assets/js/38.1be3f65d.js"><link rel="prefetch" href="/assets/js/39.f20ea790.js"><link rel="prefetch" href="/assets/js/4.000ef68f.js"><link rel="prefetch" href="/assets/js/40.3df3f67a.js"><link rel="prefetch" href="/assets/js/41.21c513f6.js"><link rel="prefetch" href="/assets/js/42.bff6c2d5.js"><link rel="prefetch" href="/assets/js/43.1c0719ca.js"><link rel="prefetch" href="/assets/js/44.c13ee70f.js"><link rel="prefetch" href="/assets/js/45.185e51bc.js"><link rel="prefetch" href="/assets/js/46.7b483404.js"><link rel="prefetch" href="/assets/js/47.a36eb1d8.js"><link rel="prefetch" href="/assets/js/48.74432289.js"><link rel="prefetch" href="/assets/js/49.79834c70.js"><link rel="prefetch" href="/assets/js/5.ed87338b.js"><link rel="prefetch" href="/assets/js/50.ed27fb48.js"><link rel="prefetch" href="/assets/js/51.b6f7ffe3.js"><link rel="prefetch" href="/assets/js/52.b7926368.js"><link rel="prefetch" href="/assets/js/53.13d1553e.js"><link rel="prefetch" href="/assets/js/54.adb753b1.js"><link rel="prefetch" href="/assets/js/55.eccbb534.js"><link rel="prefetch" href="/assets/js/56.0067f496.js"><link rel="prefetch" href="/assets/js/57.9e7d4d2e.js"><link rel="prefetch" href="/assets/js/58.59a85746.js"><link rel="prefetch" href="/assets/js/59.8372c665.js"><link rel="prefetch" href="/assets/js/6.1c71f0ba.js"><link rel="prefetch" href="/assets/js/60.65afc420.js"><link rel="prefetch" href="/assets/js/61.75e8aa66.js"><link rel="prefetch" href="/assets/js/62.cffb01ed.js"><link rel="prefetch" href="/assets/js/63.1b0bc7cd.js"><link rel="prefetch" href="/assets/js/64.c69e7b95.js"><link rel="prefetch" href="/assets/js/65.879f80c9.js"><link rel="prefetch" href="/assets/js/66.797d164d.js"><link rel="prefetch" href="/assets/js/67.2d1a0e78.js"><link rel="prefetch" href="/assets/js/7.9551e9e0.js"><link rel="prefetch" href="/assets/js/8.895e1f73.js"><link rel="prefetch" href="/assets/js/9.00eb4112.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.d69a2479.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.png" alt="‍💻文档中心🕵️‍" class="logo"> <span class="site-name can-hide">‍💻文档中心🕵️‍</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架应用" class="dropdown-title"><span class="title">框架应用</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架应用" class="mobile-dropdown-title"><span class="title">框架应用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring/1-框架概述.html" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring Cloud/1-微服务概述.html" class="nav-link">
+  Spring Cloud
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/碎的/Azkaban批量工作流任务调度器.html" class="nav-link">
+  碎的
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/编程语言/Java/1-编程语言、软件与Java语言概述.html" class="nav-link">
+  Java
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件使用" class="dropdown-title"><span class="title">软件使用</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件使用" class="mobile-dropdown-title"><span class="title">软件使用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/软件使用/Maven/1-Maven简介与安装.html" class="nav-link">
+  Maven
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="框架应用" class="dropdown-title"><span class="title">框架应用</span> <span class="arrow down"></span></button> <button type="button" aria-label="框架应用" class="mobile-dropdown-title"><span class="title">框架应用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring/1-框架概述.html" class="nav-link">
+  Spring
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/Spring Cloud/1-微服务概述.html" class="nav-link">
+  Spring Cloud
+</a></li><li class="dropdown-item"><!----> <a href="/md/框架应用/碎的/Azkaban批量工作流任务调度器.html" class="nav-link">
+  碎的
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="编程语言" class="dropdown-title"><span class="title">编程语言</span> <span class="arrow down"></span></button> <button type="button" aria-label="编程语言" class="mobile-dropdown-title"><span class="title">编程语言</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/编程语言/Java/1-编程语言、软件与Java语言概述.html" class="nav-link">
+  Java
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="软件使用" class="dropdown-title"><span class="title">软件使用</span> <span class="arrow down"></span></button> <button type="button" aria-label="软件使用" class="mobile-dropdown-title"><span class="title">软件使用</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/md/软件使用/Maven/1-Maven简介与安装.html" class="nav-link">
+  Maven
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Spring Cloud</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/md/框架应用/Spring Cloud/1-微服务概述.html" class="sidebar-link">1-微服务概述</a></li><li><a href="/md/框架应用/Spring Cloud/2-微服务技术选型.html" class="sidebar-link">2-微服务技术选型</a></li><li><a href="/md/框架应用/Spring Cloud/3-Eureka注册中心.html" class="sidebar-link">3-Eureka注册中心</a></li><li><a href="/md/框架应用/Spring Cloud/4-Ribbon负载均衡.html" class="sidebar-link">4-Ribbon负载均衡</a></li><li><a href="/md/框架应用/Spring Cloud/5-Nacos注册中心.html" class="sidebar-link">5-Nacos注册中心</a></li><li><a href="/md/框架应用/Spring Cloud/6-Nacos配置中心.html" class="sidebar-link">6-Nacos配置中心</a></li><li><a href="/md/框架应用/Spring Cloud/7-Nacos集群.html" class="active sidebar-link">7-Nacos集群</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/7-Nacos集群.html#流程" class="sidebar-link">流程</a></li><li class="sidebar-sub-header"><a href="/md/框架应用/Spring Cloud/7-Nacos集群.html#实践" class="sidebar-link">实践</a></li></ul></li><li><a href="/md/框架应用/Spring Cloud/8-Feign远程调用.html" class="sidebar-link">8-Feign远程调用</a></li><li><a href="/md/框架应用/Spring Cloud/9-Gateway网关.html" class="sidebar-link">9-Gateway网关</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_7-nacos集群"><a href="#_7-nacos集群" class="header-anchor">#</a> 7-Nacos集群</h1> <h2 id="流程"><a href="#流程" class="header-anchor">#</a> 流程</h2> <p>企业中要求高可用，所以nacos通常为集群方式搭建：
+<img src="media/1886586-20220626114631973-598755227.png" alt="image">
+SLB表示负载均衡器，可以是nginx进行负载均衡，分发请求到其他的nacos：
+<img src="media/1886586-20220626114643175-570238889.png" alt="image">
+为了解决数据共享问题，数据库是同一个服务，使用数据库集群的方式来完成。</p> <h2 id="实践"><a href="#实践" class="header-anchor">#</a> 实践</h2> <p>之前启动nacos提供－m提供的参数表示单机启动，集群模式就不添加参数直接运行即可。</p> <p>nacos下载的安装包中提供的sql文件可以直接运行到mysql数据库中；
+将nacos的cluster.conf.example改成cluster.conf，在其中配置所有节点的内容：
+<img src="media/1886586-20220626114737645-361056858.png" alt="image"></p> <p>然后在Nacos的application.properties中修改数据库连接信息：
+<img src="media/1886586-20220626114801630-667101677.png" alt="image"></p> <p>如果单机运行多个nacos，那还要在application.properties中将端口更改为不同的；
+出现以下控制台则表示nacos在集群模式下启动成功：
+<img src="media/1886586-20220626114821858-359666028.png" alt="image"></p> <p>修改nginx配置文件：
+<img src="media/1886586-20220626114838251-1767746865.png" alt="image"></p> <p>那在项目配置文件中的nacos server addr就配置成nginx所开放的端口：
+<img src="media/1886586-20220626114846046-1711130780.png" alt="image">
+nacos集群模式下会将数据都存储到时数据库中。</p> <p>小总结：
+<img src="media/1886586-20220626114853697-300410792.png" alt="image"></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/md/框架应用/Spring Cloud/6-Nacos配置中心.html" class="prev">
+        6-Nacos配置中心
+      </a></span> <span class="next"><a href="/md/框架应用/Spring Cloud/8-Feign远程调用.html">
+        8-Feign远程调用
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.525076fd.js" defer></script><script src="/assets/js/2.5edb84e1.js" defer></script><script src="/assets/js/15.7eb85647.js" defer></script>
+  </body>
+</html>
