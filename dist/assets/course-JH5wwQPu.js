@@ -1,0 +1,1 @@
+const e=[{title:"英语",store:[{code:"yy1",name:"入门第一天",questionCount:40},{code:"yy2",name:"入门第二天",questionCount:40},{code:"yy3",name:"入门第三天",questionCount:40},{code:"yy4",name:"入门第四天",questionCount:40},{code:"yy5",name:"入门第五天",questionCount:40},{code:"yy6",name:"入门第六天",questionCount:40},{code:"yy7",name:"入门第七天",questionCount:40}]}];export{e as default};
